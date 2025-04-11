@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-OpenSans:'Open Sans', 'sans-serif'
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .animate-blink {
+    animation: blink 10s infinite;
+  }
+  
+  /* Fade-in animation for subtitle */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+
+@keyframes drift {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(5px, 10px); 
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+/* Add to your CSS */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.constellation-tag {
+  transition: all 0.3s ease;
+}
+
+.constellation-tag:hover {
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.7);
+}
+
+/* Add to your CSS file */
+@keyframes transmission-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.form-underline {
+  transition: width 0.5s ease;
+}
+
+input:focus ~ .form-underline,
+textarea:focus ~ .form-underline {
+  width: 100%;
+}
+
+.success-confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(192, 132, 252, 0.7);
+  border-radius: 50%;
+}
+
