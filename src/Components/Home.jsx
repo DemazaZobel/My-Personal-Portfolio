@@ -1,5 +1,5 @@
 import React from 'react';
-import TypeWrite from './TypeWrite'; 
+import TypeWrite from './Typewrite'; 
 import MyProfile from './MyProfile';
 import { Element } from 'react-scroll';
 
