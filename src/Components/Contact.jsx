@@ -200,12 +200,7 @@ export default function Contact() {
                 <span className="text-purple-200">LinkedIn</span>
               </a>
               
-              <a href="https:/gmail.com" className="flex items-center px-4 py-2 rounded-lg bg-gray-800/50 border border-purple-900/50 hover:bg-purple-900/30 transition-colors">
-                <svg className="w-5 h-5 mr-2 text-purple-300" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
-                </svg>
-                <span className="text-purple-200">Email</span>
-              </a>
+              
             </div>
           </div>
         </div>

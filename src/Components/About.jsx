@@ -1,7 +1,7 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 import Star from './Star';
-import profile from '../assets/pp.jpeg';
+import profile from '../assets/profile.png';
 import {Link} from 'react-scroll';
 export default function About() {
   return (
@@ -28,9 +28,13 @@ export default function About() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* Profile image placeholder */}
               <div className="flex items-center justify-center lg:justify-start">
-                <div className="relative w-48 h-48 rounded-full border-4 border-purple-500/50 p-1">
-                  <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
-                    <div className="text-6xl"><img src={profile}/></div>
+                <div className="relative w-48 h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80">
+                  <div className="w-full h-full rounded-full border-4 border-purple-500/50 p-1 overflow-hidden">
+                    <img 
+                      src={profile} 
+                      alt="Profile" 
+                      className="w-full h-full rounded-full object-cover"
+                    />
                   </div>
                   <div className="absolute -inset-4 rounded-full border border-purple-400/30 animate-ping-slow pointer-events-none"></div>
                 </div>
@@ -47,7 +51,7 @@ export default function About() {
 
                 <div className="bg-gray-800/50 p-4 rounded-lg border-l-4 border-purple-400">
                   <p className="text-purple-100">
-                    Currently a <span className="text-white">4th-year software engineering student</span> at Addis Ababa Science and Technology University (AASTU), specializing in web development, AI, and app development.
+                    Currently a <span className="text-white">a Senior software engineering student</span> at Addis Ababa Science and Technology University (AASTU), specializing in web development, AI, and app development.
                   </p>
                 </div>
 
@@ -55,10 +59,14 @@ export default function About() {
                   <div className="bg-gray-800/30 p-4 rounded-lg">
                     <h3 className="text-purple-300 font-semibold mb-2">Technical Skills</h3>
                     <ul className="space-y-1 text-purple-100">
-                      <li>• React, HTML/CSS, JavaScript</li>
+                      <li>• React, Next.js, HTML/CSS, JavaScript</li>
+                      <li>• Tailwind CSS, Bootstrap, Material UI</li>
+                      <li>• Node.js, Express.js</li>
+                      <li>• Postgres, MySQL</li>
                       <li>• Python, TensorFlow, Keras</li>
-                      <li>• Web Development</li>
-                      <li>• AI & Machine Learning</li>
+                      <li>• Git, GitHub</li>
+                      <li>• API Design and Integration</li>
+                      <li>• Leveraging generative AI For development</li>
                     </ul>
                   </div>
 
