@@ -33,7 +33,7 @@ export default function Projects() {
   // Past Projects - These won't have images
   const pastProjects = [
     {
-      title: "Zambil E-commerce",
+      title: "Zembil E-commerce",
       description: "A full-stack e-commerce platform built during my internship at IE Network Solutions. Showcased my skills in full-stack development using React Query for data fetching, Redux for state management, and Express.js for the backend API.",
       tags: ["React", "React Query", "Redux", "Express.js", "Full Stack"],
       year: "2024",
