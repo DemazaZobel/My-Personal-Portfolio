@@ -43,17 +43,11 @@ export default function About() {
               {/* Text content */}
               <div className="lg:col-span-2 space-y-6">
                 <p className="text-lg text-purple-100 leading-relaxed">
-                <span className="text-white font-medium">✨ Crafting digital experiences:</span> 
                   I'm Betelhem Seleshi, a software engineer specializing in building responsive, 
                   accessible web applications. I bridge the gap between user needs and technical 
                   implementation with clean, maintainable code.
                 </p>
 
-                <div className="bg-gray-800/50 p-4 rounded-lg border-l-4 border-purple-400">
-                  <p className="text-purple-100">
-                    Currently a <span className="text-white">a Senior software engineering student</span> at Addis Ababa Science and Technology University (AASTU), specializing in web development, AI, and app development.
-                  </p>
-                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-gray-800/30 p-4 rounded-lg">

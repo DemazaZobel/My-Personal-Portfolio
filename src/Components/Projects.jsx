@@ -7,6 +7,7 @@ import dankal2Img from '../assets/dankal2.png';
 import ieNetworkImg from '../assets/IENetworksolutions.png';
 import gdgCertificateImg from '../assets/GDG.png';
 import hercommerceImg from '../assets/hercommerce.png';
+import ethioIntlImg from '../assets/ethiointel.jpg';
 
 export default function Projects() {
   // Recent Projects - These will have images
@@ -28,6 +29,15 @@ export default function Projects() {
       images: [dankalImg, dankal2Img], // Multiple images for Dankal
       link: "https://github.com/DemazaZobel/Dankal" // Replace with actual link
     },
+    {
+      title: "Ethio-Intl",
+      description: "Ethio-Intl is an open-source internationalization library built to support Ethiopian languages and systems in modern software development. It brings together: Amharic transliteration , Ethiopian ↔ Gregorian calendar conversion, Geez numeral support, Multi-language foundations (Amharic, Oromo, Tigrinya, English).",
+      tags: ["Open-source", "React", "Team Project", "Innovation"],
+      year: "2025",
+      link: "https://github.com/BeamSol/Ethio-Intl",
+      image: ethioIntlImg,
+      label: "Open-source"
+    }
   ];
 
   // Past Projects - These won't have images
