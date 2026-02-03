@@ -16,16 +16,16 @@ export default function Projects() {
       title: "AddisPlug",
       description: "An electric vehicle station platform where users can charge their vehicles, get car wash services, and vehicle repairs all in one place. A comprehensive solution for EV owners with an intuitive user interface.",
       tags: ["React", "Tailwind CSS", "JavaScript"],
-      year: "2024",
+      year: "2025/26",
       image: addisplugImg,
       link: "https://addisplug.com", // Replace with actual link
-      deployed: true
+      
     },
     {
       title: "Dankal",
       description: "A professional website for an industrial company showcasing their services, products, and company information. Built with modern web technologies for optimal performance and user experience.",
       tags: ["React", "Tailwind CSS", "JavaScript"],
-      year: "2024",
+      year: "2025/26",
       images: [dankalImg, dankal2Img], // Multiple images for Dankal
       link: "https://github.com/DemazaZobel/Dankal" // Replace with actual link
     },
@@ -33,7 +33,7 @@ export default function Projects() {
       title: "Ethio-Intl",
       description: "Ethio-Intl is an open-source internationalization library built to support Ethiopian languages and systems in modern software development. It brings together: Amharic transliteration , Ethiopian ↔ Gregorian calendar conversion, Geez numeral support, Multi-language foundations (Amharic, Oromo, Tigrinya, English).",
       tags: ["Open-source", "React", "Team Project", "Innovation"],
-      year: "2025",
+      year: "2025/26",
       link: "https://github.com/BeamSol/Ethio-Intl",
       image: ethioIntlImg,
       label: "Open-source"
@@ -46,7 +46,7 @@ export default function Projects() {
       title: "Zembil E-commerce",
       description: "A full-stack e-commerce platform built during my internship at IE Network Solutions. Showcased my skills in full-stack development using React Query for data fetching, Redux for state management, and Express.js for the backend API.",
       tags: ["React", "React Query", "Redux", "Express.js", "Full Stack"],
-      year: "2024",
+      year: "2025",
       image: ieNetworkImg,
       link: "https://github.com/DemazaZobel/Zembil-ecommerce-frontend",
       label: "Internship"
@@ -55,7 +55,7 @@ export default function Projects() {
       title: "E-commerce Platform (GDG)",
       description: "An e-commerce platform developed collaboratively with my team at Google Developers Group. Built using Flutter to create a cross-platform mobile application with modern UI/UX design principles.",
       tags: ["Flutter", "Dart", "Mobile Development", "Team Project"],
-      year: "2024",
+      year: "2024/25",
       certificate: gdgCertificateImg,
       link: "https://github.com/DemazaZobel/E-Commerce_Capstone_Project_G5",
       label: ""
@@ -64,16 +64,24 @@ export default function Projects() {
       title: "Her-commerce",
       description: "A hackathon project developed with ALX Ethiopia and iceaddis. A platform designed for small to medium enterprises in Ethiopia to showcase and sell their products. Features an innovative human agent-based system where physical agents (brokers) work across the country to help businesses without smartphones or internet connection manage their online presence and sales.",
       tags: ["Hackathon", "ALX", "iceaddis", "Team Project", "Innovation"],
-      year: "2024",
+      year: "2025",
       certificate: hercommerceImg,
       link: "https://www.figma.com/design/rckwa7Cux3qnLQhcgbEabr/qeen?node-id=0-1&t=xZSTItEkCa1wrO0F-1",
       label: ""
     },
     {
+      title: "Human Resource Management System",
+      description: "A comprehensive HRMS built for my cybersecurity course project to showcase different access control mechanisms. Implements various access control models including Attribute-Based Access Control (ABAC), Mandatory Access Control (MAC), Role-Based Access Control (RBAC), Discretionary Access Control (DAC), and other security protocols.",
+      tags: ["Cybersecurity", "Access Control", "ABAC", "MAC", "RBAC", "DAC"],
+      year: "2025/26",
+      link: "https://github.com/DemazaZobel/HRMS-back",
+      label: "Course Projects"
+    },
+    {
       title: "Walmart Weekly Sales Forecasting with ML",
       description: "A machine learning project focused on forecasting weekly sales for Walmart stores. Utilizes advanced ML techniques to predict sales patterns and trends, helping with inventory management and business planning.",
       tags: ["Python", "Machine Learning", "Data Science", "Forecasting"],
-      year: "2024-25",
+      year: "2024/25",
       link: "https://github.com/DemazaZobel/Walmart-Weekly-Sales-Forecasting-with-ML",
       label: "Course Projects"
     },
@@ -85,14 +93,7 @@ export default function Projects() {
       link: "https://github.com/DemazaZobel/roharoads-react",
       label: "Course Projects"
     },
-    {
-      title: "Human Resource Management System",
-      description: "A comprehensive HRMS built for my cybersecurity course project to showcase different access control mechanisms. Implements various access control models including Attribute-Based Access Control (ABAC), Mandatory Access Control (MAC), Role-Based Access Control (RBAC), Discretionary Access Control (DAC), and other security protocols.",
-      tags: ["Cybersecurity", "Access Control", "ABAC", "MAC", "RBAC", "DAC"],
-      year: "2023",
-      link: "https://github.com/DemazaZobel/HRMS-back",
-      label: "Course Projects"
-    },
+    
   ];
 
   // Project Card Component
@@ -102,14 +103,14 @@ export default function Projects() {
     const hasMultipleImages = images.length > 1;
     const isDankal = project.title === 'Dankal';
 
-    // Auto-rotate images for Dankal every 2 seconds
+    // Auto-rotate images for Dankal every 3 seconds
     useEffect(() => {
       if (isDankal && hasMultipleImages) {
         const interval = setInterval(() => {
           setCurrentImageIndex((prevIndex) => 
             (prevIndex + 1) % images.length
           );
-        }, 3000); // Change every 2 seconds
+        }, 3000); // Change every 3 seconds
 
         return () => clearInterval(interval);
       }
